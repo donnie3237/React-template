@@ -1,0 +1,11 @@
+.Header{
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    flex-direction: row;
+    justify-content: space-around;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
