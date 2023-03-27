@@ -1,13 +1,51 @@
 *{
   box-sizing: border-box;
-  transition: all 0.3s;
 }
 body{
   margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: black;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb{
+  width: 80%;
+  background-color: white;
 }
 .flex{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.App{
+  .crop{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: normal;
+    overflow-y: scroll;
+    background-color: rgb(51, 60, 96);
+    scroll-behavior: smooth;
+    .sec{
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: center;
+    }
+    .sec1{
+      background-color: rgb(51, 60, 96);
+    }
+    .sec2{
+      background-color: rgb(55, 53, 82);
+    }
+  }
+  .card{
+    width: 100vw;
+    height: 100%;
+    background-color: orange;
+
+  }
 }
