@@ -5,7 +5,7 @@ function SecureRoute() {
   return (
     <Router>
         <Routes>
-            <Route path='/' element={<h1>Err</h1>}></Route>
+            <Route path='/' element={<h1>Security</h1>}></Route>
         </Routes>
     </Router>
   )
