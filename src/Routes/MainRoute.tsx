@@ -1,20 +1,23 @@
 import {BrowserRouter as  Router,Route,Routes} from 'react-router-dom'
 import Header from '../components/Header/Header'
-import One from '../Pages/one/One'
-import Two from '../Pages/two/Two'
-import Three from '../Pages/three/Three'
-import Hello from '../Pages/Hello/Hello'
+import { lazy , Suspense } from 'react'
+const Hello = lazy(()=> import('../Pages/Hello/Hello'))
+const One = lazy(()=> import('../Pages/one/One'))
+const Two = lazy(()=> import('../Pages/two/Two'))
+const Three = lazy(()=> import('../Pages/three/Three'))
 
 function MainRoute() {
   return (
     <Router>
-        <Header/>
-        <Routes>
-          <Route path='/' element={<Hello/>}/>
-          <Route path='/one' element={<One/>}/>
-          <Route path='/two' element={<Two/>}/>
-          <Route path='/three' element={<Three/>}/>
-        </Routes>
+        <Suspense fallback={<h1>Loading....</h1>}>
+          <Header/>
+          <Routes>
+            <Route path='/' element={<Hello/>}/>
+            <Route path='/one' element={<One/>}/>
+            <Route path='/two' element={<Two/>}/>
+            <Route path='/three' element={<Three/>}/>
+          </Routes>
+        </Suspense>
       </Router>
   )
 }
