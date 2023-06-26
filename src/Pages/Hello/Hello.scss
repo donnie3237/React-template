@@ -1,18 +1,10 @@
 .hello{
     background-color: rgb(50, 50, 50);
     width: 100vw;
-    height: calc(100vh - 50px);
-    button{
-        width: 20vw;
-        height: 30px;
-        border: none;
-        &:hover{
-            background-color: red;
-        }
-    }
+    height: 100vh;
 }
 .page{
     background-color: rgb(64, 64, 64);
     width: 100vw;
-    height: calc(100vh - 50px);
+    height: 100vh;
 }

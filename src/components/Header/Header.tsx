@@ -5,8 +5,9 @@ import './Header.scss'
 function Header() {
   return (
     <div className='Header flex'>
-        <NavLink  to='/one'>one</NavLink>
-        <NavLink  to='/two'>two</NavLink>
+        <NavLink className="logo" to='/'>Home</NavLink>
+        <NavLink to='/one'>one</NavLink>
+        <NavLink to='/two'>two</NavLink>
         <NavLink to='/three'>three</NavLink>
     </div>
   )

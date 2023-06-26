@@ -1,11 +1,28 @@
 .Header{
-    width: 100vw;
-    height: 50px;
-    background-color: rgb(255, 0, 0);
-    flex-direction: row;
-    justify-content: space-around;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(45, 45, 45);
+    justify-content:flex-start;
+    position: fixed;
     a{
         text-decoration: none;
         color: white;
+        width: 100%;
+        padding: 7px 10px;
+        &:hover{
+            background-color: rgb(10, 13, 12);
+        }
+        &.active{
+            background-color: rgb(31, 30, 30);
+        }
+    }
+    .logo{
+        padding: 15px 10px;
+        &:hover{
+            background: transparent;
+        }
+        &.active{
+            background: transparent;
+        }
     }
 }
