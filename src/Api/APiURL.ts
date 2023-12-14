@@ -1,1 +1,1 @@
-export const APiURL : string = "< Api url >"
+export const APiURL: string = "< Api url >";

@@ -1,11 +1,9 @@
-import './Hello.scss'
-
 function Hello() {
-  return (
-    <div className='hello flex'>
-        <h1>Hello</h1>
-    </div>
-  )
+	return (
+		<div className="w-screen h-screen flex justify-center items-center">
+			<h1>Hello</h1>
+		</div>
+	);
 }
 
-export default Hello
+export default Hello;

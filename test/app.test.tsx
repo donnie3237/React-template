@@ -1,12 +1,16 @@
-import { describe, expect, it } from 'vitest';
+import {render, screen} from '@testing-library/react'
+import '@testing-library/jest-dom'
+import App from '../src/App'
+import { test ,expect ,beforeEach } from 'vitest'
+import React from 'react'
 
-describe('App', () => {
-  const x = 2
-  const y = 2
-  it('can plus', () => {
-    expect(x+y).toBe(4)
+test('loads and displays greeting', async () => {
+  // ARRANGE
+  beforeEach(() => {
+    render(<App/>)
   });
-  it('can multiply', () => {
-    expect(x*y).toBe(4)
-  });
-});
+
+
+  // ACT
+  expect(screen.getByText(/Testing/i)).toBeDefined()
+})

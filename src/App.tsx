@@ -1,12 +1,11 @@
-import './Global/scss/App.scss'
-import MainRoute from './Routes/MainRoute';
+import MainRoute from "./Routes/MainRoute";
 
 function App() {
-  return (
-    <div className="App">
-      <MainRoute/>
-    </div>
-  )
+	return (
+		<div className="App font-mono">
+			<MainRoute />
+		</div>
+	);
 }
 
-export default App
+export default App;

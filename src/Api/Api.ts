@@ -1,10 +1,8 @@
 import axios from "axios";
-import { APiURL } from "./SERVER_URL";
+import { APiURL } from "./APiURL";
 
-export function get(){
-    axios.get(APiURL).then(
-        (results)=>{
-            return results
-        }
-    )
+export function get() {
+	axios.get(APiURL).then((results) => {
+		return results;
+	});
 }

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Two() {
-  return (
-    <div className='page flex'>Two</div>
-  )
+	return (
+		<div className="w-screen h-screen flex justify-center items-center">
+			Two
+		</div>
+	);
 }
 
-export default Two
+export default Two;
